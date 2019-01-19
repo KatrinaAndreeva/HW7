@@ -1,7 +1,7 @@
-// 2. Создать три элемента strong и добавить их в конец ссылок, которые находятся внутри списка ul (в каждую ссылку один - strong). +++++
+// 2.В каждую ссылку, которая находятся внутри списка ul  добавить по тегу strong (в каждую ссылку один - strong). 
 let newWords = document.querySelectorAll('li>a');
 for (let i = 0; i < newWords.length; i++) {
-    newWords[i].insertAdjacentHTML('beforeEnd', "<strong></strong>");
+    newWords[i].insertAdjacentHTML('afterBegin', "<strong></strong>");
 }
 
 
